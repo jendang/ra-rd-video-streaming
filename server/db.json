@@ -15,6 +15,24 @@
       "description": "stream with userId",
       "userId": "115779123527359845165",
       "id": 3
+    },
+    {
+      "title": "stream created without sign-in",
+      "description": "not authorize this yet",
+      "userId": null,
+      "id": 4
+    },
+    {
+      "title": "this is a stream with sign in",
+      "description": "lets see how is it",
+      "userId": "115779123527359845165",
+      "id": 5
+    },
+    {
+      "title": "programmatic navigation",
+      "description": "testing",
+      "userId": "115779123527359845165",
+      "id": 6
     }
   ]
 }
