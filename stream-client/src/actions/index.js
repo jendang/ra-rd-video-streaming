@@ -62,13 +62,14 @@ export const fetchStreams = () => async dispatch => {
     })
 }
 
-//edit stream //put()
+//edit stream //put() --> update ALL properties   /patch()-->update SOME properties
 export const editStream = (id, formValues) => async dispatch => {
-    const response = await streams.put(`/streams/${id}`, formValues)
+    const response = await streams.patch(`/streams/${id}`, formValues)
     dispatch({
         type: EDIT_STREAM,
         payload: response.data
     })
+    history.push('/') // navigate the page back to streamlist
 }
 
 //delete stream  //delete()
