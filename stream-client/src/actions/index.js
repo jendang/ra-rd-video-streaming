@@ -30,8 +30,10 @@ export const signOut = () => {
 } */
 
 //create stream //post()
-export const createStream = formValues => async dispatch => {
-    const response = await streams.post('/streams', formValues)
+//we need to know who create the streams
+export const createStream = formValues => async (dispatch, getState) => {
+    const { userId } = getState().auth
+    const response = await streams.post('/streams', { ...formValues, userId })
     //Action creator
     dispatch({
         type: CREATE_STREAM,
