@@ -7,5 +7,14 @@ OpenBroadcastSoftware: https://obsproject.com/
 json-server: https://www.npmjs.com/package/json-server
 https://www.npmjs.com/package/flv.js
 
+Set up OBS: From OBS
+Settings -> Stream
+
+Stream Type : Custom Streaming Server
+
+URL : rtmp://localhost/live
+
+Stream key : STREAM_NAME/stream.id
+
 
 
