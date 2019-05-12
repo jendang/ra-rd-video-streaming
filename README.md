@@ -16,5 +16,6 @@ URL : rtmp://localhost/live
 
 Stream key : STREAM_NAME/stream.id
 
+For more information about this project, please feel free to [contact me](https://www.linkedin.com/in/jennydang/)
 
 
